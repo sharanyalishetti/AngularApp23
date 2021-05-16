@@ -1,0 +1,44 @@
+.contact {
+    background-color: black;
+    height: 580px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe9UITgf2bZzFGSjbjXbpLOlL3d9pk_sq6Xg&usqp=CAU") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: blueviolet;
+}
+img{
+    display: block;
+    margin: auto;
+}
+ul{
+    list-style: inside ;
+}
+
+.heading{
+    background-color: black;
+    border-radius: 10px;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: none  !important;
+    border-radius: 0px;
+}
+
+.form-control:focus{
+    border-bottom: 1px solid black;
+}
+.shadow {
+    box-shadow: 10px blanchedalmond;
+    
+}
+.form {
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: block;
+    margin: auto;
+
+}

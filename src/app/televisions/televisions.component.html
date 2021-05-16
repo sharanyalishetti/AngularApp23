@@ -1,0 +1,9 @@
+
+<div class="mt-5">
+    <div class="row row-cols-1 row-cols-sm-2 mt-5 row-cols-md-3">
+        <div class = "col mb-3" *ngFor = "let lObj of products">
+            <app-product-details [productObj] = lObj   ></app-product-details>
+        </div>
+    </div>
+</div>
+

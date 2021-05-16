@@ -1,0 +1,10 @@
+.nav-item {
+    background-color: coral;
+    border-radius: 5px;
+}
+.nav-link {
+    color: cornsilk;
+}
+.nav-link:focus{
+    background-color: goldenrod;   
+}

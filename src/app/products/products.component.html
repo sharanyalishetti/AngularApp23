@@ -1,0 +1,20 @@
+<!-- <div class="text-center text-white">
+    <h5 class="mt-5">Products Selected are : {{productCount}}</h5>
+    <span *ngFor = "let p of productSendByChild">{{p}}, </span>
+</div> -->
+<hr style="border: 1px solid white">
+<ul class="nav nav-pills justify-content-evenly pt-3">
+    <li class="nav-item">
+      <a class="nav-link "  routerLink = "laptops" routerLinkActive = "active"><i class="fas fa-laptop m-1"></i>Laptops</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink = "mobiles" routerLinkActive = "active"><i class="fas fa-mobile m-1"></i>Mobiles</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink = "televisions" routerLinkActive = "active"><i class="fas fa-tv m-1"></i>Televisions</a>
+    </li>
+  </ul>
+
+  <div class="container">
+      <router-outlet></router-outlet>
+  </div>

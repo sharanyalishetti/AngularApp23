@@ -1,0 +1,11 @@
+
+    <div class="card shadow mb-3 h-100" style="border-radius: 10px;">
+        <img src="{{productObj.productImage}}" alt="">
+        <div class="card-body">
+            <div class="card-title text-center"><h4>{{productObj.productTitle}}</h4></div>
+            <div class="card-text">{{productObj.description}}</div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary btn-sm d-block mx-auto " (click) = "sendProductDetails(productObj.productTitle)" ><i class="fas fa-plus-square m-1"></i>Add To Cart</button>
+        </div>
+    </div>

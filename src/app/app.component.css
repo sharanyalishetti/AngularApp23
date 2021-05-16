@@ -1,0 +1,21 @@
+.navbg{
+    background-color: wheat;
+    color: #000;
+}
+.tog {
+    background-color: blanchedalmond;
+}
+.active{
+    font-weight: bold;
+    background-color: rgb(226, 81, 110);
+   
+}
+
+nav li a{
+   color:white;
+}
+img{
+    width: 50px;
+    background-color: cornsilk;
+}
+
