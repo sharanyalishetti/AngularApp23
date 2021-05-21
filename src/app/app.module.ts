@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,6 +13,10 @@ import { FooterComponent } from './footer/footer.component';
 import { LaptopsComponent } from './laptops/laptops.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ApiComponent } from './Api/Api.component';
+import { UsersComponent } from './users/users.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,16 @@ import { TelevisionsComponent } from './televisions/televisions.component';
     FooterComponent,
     LaptopsComponent,
     MobilesComponent,
-    TelevisionsComponent
+    TelevisionsComponent,
+    PagenotfoundComponent,
+    ApiComponent,
+    UsersComponent,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

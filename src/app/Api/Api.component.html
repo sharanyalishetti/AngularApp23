@@ -1,0 +1,102 @@
+<div class="">
+<div class="text-white apibg bg-light">
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <h5>Page</h5>
+            <h5>Per Page</h5>
+            <h5>Total</h5>
+            <h5>Total Pages</h5>
+        </div>
+        <div class="col-sm-4">
+            <h5>:</h5>
+            <h5>:</h5>
+            <h5>:</h5>
+            <h5>:</h5>
+
+        </div>
+        <div class="col-sm-4">
+            <h5>{{datav.page}}</h5>
+            <h5>{{datav.per_page}}</h5>
+            <h5>{{datav.total}}</h5>
+            <h5>{{datav.total_pages}}</h5>
+        </div>
+
+    </div>
+    <h3 class="text-center bg-warning p-3 mt-5">Api Data</h3>
+    <table class="table  table-bordered table-hover table-info table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Color</th>
+                <th>Pantone Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let data1Obj of datav.data">
+                <td>{{data1Obj.id}}</td>
+                <td>{{data1Obj.name}}</td>
+                <td>{{data1Obj.year}}</td>
+                <td>{{data1Obj.color}}</td>
+                <td>{{data1Obj.pantone_value}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h3 class="text-center bg-warning p-3 mt-5">Users Data</h3>
+    <div class="table-responsive">
+        <table class="table text-white table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th rowspan="3">ID</th>
+                    <th rowspan="3">Name</th>
+                    <th rowspan="3">UserName</th>
+                    <th rowspan="3">Email</th>
+                    <th colspan="6">Address</th>
+                    <th rowspan="3">Phone</th>
+                    <th rowspan="3">WebSite</th>
+                    <th colspan="3" rowspan="2">Company</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Street</th>
+                    <th rowspan="2">Suite</th>
+                    <th rowspan="2">City</th>
+                    <th rowspan="2">Zipcode</th>
+                    <th colspan="2">Geo</th>
+                </tr>
+                <tr>
+                    <th>Lat</th>
+                    <th>lng</th>
+                    <th>Name</th>
+                    <th>CatchPhrase</th>
+                    <th>Bs</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor = "let userObj of usersData">
+                    <td>{{userObj.id}}</td>
+                    <td>{{userObj.name}}</td>
+                    <td>{{userObj.username}}</td>
+                    <td>{{userObj.email}}</td>
+                    <td>{{userObj.address.street}}</td>
+                    <td>{{userObj.address.suite}}</td>
+                    <td>{{userObj.address.city}}</td>
+                    <td>{{userObj.address.zipcode}}</td>
+                    <td>{{userObj.address.geo.lat}}</td>
+                    <td>{{userObj.address.geo.lng}}</td>
+                    <td>{{userObj.phone}}</td>
+                    <td>{{userObj.website}}</td>
+                    <td>{{userObj.company.name}}</td>
+                    <td>{{userObj.company.catchPhrase}}</td>
+                    <td>{{userObj.company.bs}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+</div>

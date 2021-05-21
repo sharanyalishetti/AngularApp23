@@ -1,3 +1,5 @@
+<div class="body">
+
 <div>
   <nav class="navbar navbar-expand-md  navbar-light">
     <div class="container ">
@@ -21,6 +23,12 @@
           </li>  
           <li class="nav-item">
             <a class="nav-link  text-white" routerLink="products" routerLinkActive = "active">Products</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link  text-white" routerLink="Api" routerLinkActive = "active">ApiData</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link  text-white" routerLink="users" routerLinkActive = "active">UserData</a>
           </li>  
         </ul>
       </div>
@@ -29,8 +37,9 @@
 </div>
 
 <div>
-  <router-outlet></router-outlet>
+  <router-outlet> </router-outlet>
 
   
   <app-footer></app-footer>
+</div>
 </div>
