@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-sm-2 col-md-3"></div>
+    <div class="col-sm-8 col-md-6">
+        <form (ngSubmit) = "onSubmitData()">
+            <div class="form-floating mb-3 text-white">
+                <input type="text" name="productTitle" id="br" class="form-control text-white" placeholder="Enter Brand" 
+                [(ngModel)] = "mobileModel.productTitle">
+                <label for="br" class="text-white">Brand</label>
+            </div>
+            <div class="form-floating mb-3 text-white">
+                <input type="text" name="image" id="im" class="form-control" placeholder="Enter url"
+                [(ngModel)] = "mobileModel.productImage">
+                <label for="im">Image Url</label>
+            </div>
+            <div class="form-floating mb-3 text-white">
+                <input type="text" name="description" id="des" class="form-control" placeholder="Enter description"
+                [(ngModel)] = "mobileModel.description">
+                <label for="des">Description</label>
+            </div>
+            <button class="btn btn-danger btn-sm float-end mb-5 mt-3" type="submit">Add</button>
+        </form>
+    </div>
+</div>

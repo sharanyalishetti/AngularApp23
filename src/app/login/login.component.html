@@ -3,35 +3,36 @@
     <h2 class="text-center text-white">Login</h2>
         <div class="row text-white">
             <div class="col-sm-1 col-md-2"></div>
-            <div class="col-sm-10 col-md-8">
-                <form class="w-75 d-block mx-auto log">
-                    <div class="mb-3">
-                        <label for="un" class="form-label">UserName</label>
-                        <input type="text" class="form-control" id="un" >
-                    </div>
-                    <div class="mb-3">
-                        <label for="pw" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="pw">
-                    </div>
-                    <div>
-                        <div class="form-check" style="display: inline-block;">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                              Remember Me
-                            </label>
+                <div class="col-sm-10 col-md-8">
+                    <form class="w-75 d-block mx-auto log" #ref = "ngForm" (ngSubmit) = "onLogin(ref)">
+                        <div class="mb-3">
+                            <label for="un" class="form-label">UserName</label>
+                            <input type="text" class="form-control" id="un" name = "username" ngModel>
                         </div>
-                        <button class="btn btn-primary btn-sm float-end" style="display: inline-block;">Login</button>
-                    </div>
-                    <div class="row m-5">
-                        <div class="col-sm-6 float-center">
-                            <button class="btn btn-danger d-block mx-auto btn-sm" style="display: inline-block;"><span><i class="fab fa-facebook-f text-white m-1"></i></span>Login with facebook </button>
+                        <div class="mb-3">
+                            <label for="pw" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="pw" name="password" ngModel>
                         </div>
-                        <div class="col-sm-6 float-center">
-                            <button class="btn btn-warning d-block mx-auto btn-sm text-white" style="display: inline-block;"><span><i class="fab fa-google text-white m-1"></i></span>Login with google</button>
+                        <div>
+                            <!-- <div class="form-check" style="display: inline-block;">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked" >
+                                  Remember Me
+                                </label>
+                            </div> -->
+                            <button class="btn btn-primary btn-sm float-end" style="display: inline-block;" type="submit">Login</button>
                         </div>
-                    </div>               
-                </form>       
-            </div>
+                        <!-- <div class="row m-5">
+                            <div class="col-sm-6 float-center">
+                                <button class="btn btn-danger d-block mx-auto btn-sm" style="display: inline-block;"><span><i class="fab fa-facebook-f text-white m-1"></i></span>Login with facebook </button>
+                            </div>
+                            <div class="col-sm-6 float-center">
+                                <button class="btn btn-warning d-block mx-auto btn-sm text-white" style="display: inline-block;" type="submit"><span><i class="fab fa-google text-white m-1"></i></span>Login with google</button>
+                            </div>
+                        </div>                -->
+                    </form>       
+                </div>
+            
              
             <div class="col-sm-1 col-md-2"></div>
         </div>

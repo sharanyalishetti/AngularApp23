@@ -17,6 +17,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ApiComponent } from './Api/Api.component';
 import { UsersComponent } from './users/users.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { ViewmobilesComponent } from './viewmobiles/viewmobiles.component';
+import { AddnewmobileComponent } from './addnewmobile/addnewmobile.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,11 +38,14 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     ApiComponent,
     UsersComponent,
     UserDetailsComponent,
+    ViewmobilesComponent,
+    AddnewmobileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

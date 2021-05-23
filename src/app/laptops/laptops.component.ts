@@ -15,7 +15,14 @@ export class LaptopsComponent implements OnInit{
 
   }
   ngOnInit() {
-    this.laptops = this.dsObj.getLaptopsData();
+    this.dsObj.getLaptopsData().subscribe(
+      ldata => {
+        this.laptops =ldata;
+      },
+      err => {
+        console.log("Error in laptops data",err);
+      }
+    )
   }
 
 

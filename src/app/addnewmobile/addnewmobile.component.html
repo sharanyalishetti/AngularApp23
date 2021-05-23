@@ -1,0 +1,25 @@
+<div class="formbg mb-5 mt-5">
+    <div class="row ">
+        <div class="col-sm-2 col-md-3"></div>
+        <div class="col-sm-8 col-md-6 mt-4 mb-4">
+            <form (ngSubmit) = "onSubmitNewMobile()">
+                <div class="form-floating mb-3">
+                    <input type="text" name="productTitle" id="pt" class="form-control" placeholder="Enter Brand" [(ngModel)] = "mobileModel.productTitle">
+                    <label for="pt" class="tcolor" >Brand</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="productImage" id="pi" class="form-control" placeholder="Enter Image Url" [(ngModel)] = "mobileModel.productImage">
+                    <label for="pi" class="tcolor">Image Url</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="description" id="des" class="form-control" placeholder="Enter description" [(ngModel)] = "mobileModel.description">
+                <label for="des" class="tcolor">Description</label>
+                </div> 
+                <div>
+                    <button class="btn btn-sm btn-warning float-end" type="submit">Add</button>
+                </div>  
+            </form>
+        </div>
+        <div class="col-sm-2 col-md-3"></div>
+    </div>
+</div>

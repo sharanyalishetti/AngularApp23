@@ -1,0 +1,56 @@
+<div class="table-content table-responsive">
+    <form #ref = "ngForm" (ngSubmit) = "saveMobile(ref.value)">
+        <table class="table text-white table-bordered">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Description</th>
+                    <th>Image Url</th>
+                    <th>Image</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor = "let mObj of mobiles; let ind = index">
+                    <td>
+                        <span *ngIf = "!editMobileStatus || editMobileIndex!=ind">
+                            {{mObj.productTitle}}
+                        </span>
+                        <span *ngIf = "editMobileStatus && editMobileIndex == ind">
+                            <input type="text" name="productTitle" id="" [(ngModel)] = "editMobileObject.productTitle">
+                        </span>
+                    </td>
+                    <td>
+                        <span *ngIf = "!editMobileStatus || editMobileIndex != ind">
+                            {{mObj.description}}
+                        </span>
+                        <span *ngIf = "editMobileStatus && editMobileIndex == ind">
+                            <input type="text" name="description" id="" [(ngModel)] = "editMobileObject.description">
+                        </span>
+                    </td>
+                    <td>
+                        <span *ngIf = "!editMobileStatus || editMobileIndex != ind">
+                            {{mObj.productImage}}
+                        </span>
+                        <span *ngIf = "editMobileStatus && editMobileIndex == ind">
+                            <input type="text" name="productImage" id="" [(ngModel)] = "editMobileObject.productImage">
+                        </span>
+                    </td>
+                    <td>
+                        <img src="{{mObj.productImage}}" alt="" width="100px">
+                    </td>
+                    <td>
+                        <span *ngIf = "!editMobileStatus || editMobileIndex != ind">
+                            <button class="btn btn-warning btn-sm m-1" (click) = "editMobile(mObj,ind)"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-danger btn-sm m-1" (click) = "deleteMobile(mObj)"><i class="fas fa-trash"></i></button>
+                        </span>
+                        <span *ngIf = "editMobileStatus && editMobileIndex == ind">
+                            <button class="btn btn-sm btn-success" type="submit"><i class="fas fa-save"></i></button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    
+</div>

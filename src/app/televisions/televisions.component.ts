@@ -10,12 +10,19 @@ export class TelevisionsComponent implements OnInit {
 
   televisions : product[] = [];
 
-  constructor(private dsObj : DataService){
-
-  }
+  constructor(private dsObj : DataService){ }
   ngOnInit() {
-    this.televisions = this.dsObj.getTelevisionsData();
+    this.dsObj.getTelevisionsData().subscribe(
+      tdata => {
+        this.televisions = tdata;
+      },
+      err => {
+        console.log("Error in televisions data",err);
+      }
+    )
+      
   }
+  
 
  /* productSendByChild = [];
 

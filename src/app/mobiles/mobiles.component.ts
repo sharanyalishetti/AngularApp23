@@ -14,7 +14,7 @@ export class MobilesComponent implements OnInit{
 
   }
   ngOnInit(){
-    this.mobiles = this.dsObj.getMobilesData();
+    //this.mobiles = this.dsObj.getMobilesData();
   }
 
     /*productSendByChild = [];

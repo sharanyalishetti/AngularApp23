@@ -32,7 +32,7 @@ img{
     bottom: 0;
     right: 0;
     background: black;
-    opacity: 0.7;
+    opacity: 0.4;
 }
 .carousel-caption {
     bottom: 150px;
@@ -45,4 +45,22 @@ img{
 .btn-2 {
     background-color: tomato;
     color: white;
+}
+.salebg {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGHtPEeKy4vwz-NdZSN_GUX-Wx2d0jAQ0x5g&usqp=CAU");
+    background-repeat: no-repeat scroll center scroll;
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.salebg::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
 }
